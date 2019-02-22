@@ -50,9 +50,15 @@ app.get('/bad',(req,res)=>{
 
 app.get('/about',(req,res)=>{
   res.render('about.hbs',{
-    pageTitle:'About Page HBS',
+    pageTitle:'About Page HBS'
   });
 });
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs',{
+    pageTitle : 'Projects Page'
+  })
+})
 
 app.listen(port,()=>{
   console.log(`server is up and port ${port}`);
